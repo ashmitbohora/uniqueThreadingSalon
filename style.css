@@ -1,0 +1,1037 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainPinkColor: #E9A798;
+    --lightPinkColor: #F6DBD5;
+    --darkGreyColor: #9C9C9C;
+    --lightGreyColor: #DCDCDC;
+
+
+
+    --darkGreyHover: #7F7F7F;
+    --darkGreyActive: #6A6A6A; 
+
+    --lightGreyHover: #C0C0C0; 
+    --lightGreyActive: #A9A9A9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden !important;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+button{
+    all: unset;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto", sans-serif;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: var(--mainPinkColor);
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 300;
+
+    color: var(--mainPinkColor);
+}
+
+h4{
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    color: var(--mainPinkColor);
+}
+
+h6{
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    color: var(--darkGreyColor);
+}
+
+
+
+section{
+    padding: 50px 0;
+}
+
+
+
+.darkerButton {
+    background-color: var(--darkGreyColor);
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.darkerButton:hover {
+    background-color: var(--darkGreyHover);
+    transform: scale(1.05);
+}
+
+.darkerButton:active {
+    background-color: var(--darkGreyActive);
+    transform: scale(0.95);
+}
+
+.lighterButton {
+    background-color: var(--lightGreyColor);
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.lighterButton:hover {
+    background-color: var(--lightGreyHover);
+    transform: scale(1.05);
+}
+
+.lighterButton:active {
+    background-color: var(--lightGreyActive);
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    background-color: white;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navRight a{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.navRight button{
+    background-color: var(--darkGreyColor);
+    padding: 7px 14px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* Landing Page */
+
+
+
+.landingPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 40px 0;
+
+    background-image: url(images/mainPageBackground.png);
+}
+
+.landingPage .left h1{
+    font-size: 4rem;
+    text-align: center;
+
+
+}
+
+.landingPage .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+
+    margin-right: 10vw;
+}
+
+.landingPage .right{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    height: 75%;
+}
+
+.landingPage .right img{
+    height: 100%;
+}
+
+
+
+
+/* Main Page Dividor */
+
+.mainPageDividor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    color: white;
+
+    background-color: #6D6D6D;
+    padding: 10px 0;
+}
+
+.mainPageDividor h2{
+    font-weight: 100;
+}
+
+
+
+/* Services Overview */
+
+.servicesOverview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    text-align: center;
+}
+
+
+.servicesOverview .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 50%;
+
+    gap: 20px;
+}
+
+
+
+
+
+.servicesOverview .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    width: 60%;
+}
+
+
+
+.servicesIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    gap: 30px;
+    
+}
+
+.servicesIcon1, .servicesIcon2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 5vw;
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+.serviceIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.smallerServices{
+    display: none;
+}
+
+
+
+
+/* Get to know us page */
+
+.getToKnowUsPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(images/mainPageBackground.png);
+
+    padding: 0;
+
+
+}
+
+.getToKnowUsPage .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.getToKnowUsPage .right{
+    margin: 0 0 0 auto;
+    overflow-x: hidden;
+}
+
+.getToKnowUsPage .right img{
+    width: 100%;
+}
+
+
+
+/* About Us Page */
+
+
+
+.aboutUsPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 95%;
+}
+
+.aboutUsPage h2{
+    color: var(--mainPinkColor);
+}
+
+.aboutUsPage .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+    flex: 1;
+
+}
+
+.aboutUsPage .left p{
+    width: 60%;
+    text-align: center;
+
+}
+
+.aboutUsPage .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.aboutUsPage .right img{
+    width: 100%;
+}
+
+
+/* Services Dividor */
+
+
+.servicesDividor{
+    width: 100%;
+    height: 150px;
+
+    background-image: url(images/servicesDividor.png);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--mainPinkColor);
+}
+
+
+.servicesDividor h2{
+    font-weight: 600;
+}
+
+
+
+/* Location Page */
+
+.locationPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.locationPage .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: fit-content;
+}
+
+.locationPage .left img{
+    width: 250px;
+    height: 400px;
+}
+
+.mapIframe{
+    height: 400px;
+    width: 22vw;
+}
+
+.locationPage .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+
+.locationPage .right > p:nth-of-type(1) {
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.locationPage .right > p:nth-of-type(2) {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+ 
+
+
+
+
+
+
+
+
+
+.addressForm {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.addressForm h5 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #7f8c8d;
+}
+
+.addressForm p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 0;
+    color: #7f8c8d;
+}
+
+.formLine {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.formLine h5 {
+    min-width: 120px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.formLine p {
+    flex-grow: 1;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+
+
+
+
+/* Contact Page */
+
+.getInTouch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    width: 90%;
+    margin:  0 auto;
+}
+
+.getInTouch form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+
+    background-color: var(--darkGreyColor);
+
+    padding: 20px;
+
+    gap: 10px;
+
+    border-radius: 10px;
+
+}
+
+form p{
+    color: white;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contactInputs{
+    outline: none;
+    border: none;
+
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    width: 100%;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+}
+form button {
+    width: fit-content;
+    align-self: flex-start;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--darkGreyColor);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.05);
+}
+
+form button:active {
+    background-color: #e0e0e0; 
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutUsPage .smaller{
+    display: none;
+}
+
+
+
+
+
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Services Page */
+
+.servicesTitle{
+    padding: 40px 0;
+}
+
+.dividor{
+    height: 150px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    background-color: gray;
+
+}
+
+.threadingDividor{
+    background-image: url(images/threadingDividor.png);
+}
+
+.waxingDividor{
+    background-image: url(images/waxingDividor.png);
+}
+.facialsDividor{
+    background-image: url(images/facialsDividor.png);
+}
+.tintingDividor{
+    background-image: url(images/tintingDividor.png);
+}
+.eyelashDividor{
+    background-image: url(images/eyelashesDividor.png);
+}
+
+
+.servicesPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    margin: 0 auto;
+
+    gap: 10vw;
+}
+
+.servicesPage .left{
+    flex: 1;
+} 
+.servicesPage .right{
+    flex: 2.5;
+}
+
+.servicesPage .left .more{
+    background-color: var(--lightPinkColor);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    border-radius: 10px;
+
+    min-height: 300px;
+}
+
+.servicesPage .left p{
+    color: var(--darkGreyColor);
+}
+
+.bookNowButton {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.bookNowButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05); 
+}
+
+.bookNowButton:active {
+    background-color: #e0e0e0; 
+    transform: scale(0.95); 
+}
+
+
+
+.servicesPage .right p{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin:  0 auto;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+
+    nav{
+        width: 95%;
+    }
+
+    .navRight{
+        gap: 20px;
+    }
+
+
+    .landingPage .left h1{
+        font-size: clamp(3rem, 6.5vw, 6.5vw);
+    }
+
+    .landingPage .left{
+        width: 70%;
+    }
+
+
+    .landingPage .right{
+        right: 20px;
+        height: 60%;
+    }
+
+
+
+
+    .aboutUsPage .left{
+        flex: 1.5;
+    }
+    .aboutUsPage .left p{
+        width: 80%;
+    }
+
+
+
+
+
+
+    h2{
+        font-size: 3.5vw;
+        padding-right: 10px;
+    }
+
+
+    .getToKnowUsPage{
+        flex-direction: column-reverse;
+    }
+    .getToKnowUsPage .right{
+        width: 100%;
+    }
+
+    .getToKnowUsPage .left{
+        padding: 20px;
+    }
+
+
+
+
+
+
+    .bigServices{
+        display: none;
+    }
+    .smallerServices{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+        gap: 5vw;
+    }
+
+
+    .servicesDividor h2{
+        font-size: 5vw;
+    }
+
+
+    .locationPage .right{
+        display: none;
+    }
+    .locationPage .left{
+        gap: 20px;
+    }
+    .locationPage .left img{
+        height: 400px;
+        width: auto;
+    }
+
+    .mapIframe{
+        height: 400px;
+        width: 50vw;
+    }
+
+
+
+    .getInTouch{
+        width: 95%;
+        margin: 0 0 0 30px;
+    }
+
+    .getInTouch h1{
+        display: none;
+    }
+
+    .getInTouch .left > p:nth-of-type(1) {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+    }
+    
+    .getInTouch .left > p:nth-of-type(2) {
+        font-size: 1rem;
+
+    }
+
+    .getInTouch form {
+        width: 45vw;
+    }
+     
+
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+
+    .hamburger {
+        display: block;
+    }
+
+    .navRight {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+
+
+        background: rgba(255, 255, 255, 0.7); 
+        backdrop-filter: blur(10px); 
+        border: 1px solid rgba(255, 255, 255, 0.4); 
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+        border-radius: 10px;
+
+
+        padding: 20px;
+        gap: 10px;
+        z-index: 99;
+
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .navRight.active {
+        display: flex;
+        width: 70vw;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .navRight a, .navRight button {
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .navRight button {
+        background-color: rgba(255, 255, 255, 0.5); 
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+
+    .landingPage{
+        padding: 75px 0 0 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .landingPage .left{
+        width: 100%;
+        margin-right: 0;
+    }
+    .landingPage .right{
+        position: static;
+        height: 150px;
+    }
+
+
+
+    .servicesOverview .top{
+        width: 90%;
+    }
+
+    .smallerServices{
+        justify-content: space-around;
+    }
+
+    .aboutUsPage{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .aboutUsPage .right{
+        width: 50%;
+    }
+
+
+    .aboutUsPage .bigger{
+        display: none;
+    }
+
+    .aboutUsPage .smaller{
+        display: block;
+        font-size: 6vw;
+    }
+
+
+
+
+
+    .locationPage img{
+        display: none;
+    }
+    .mapIframe{
+        width: 85vw;
+    }
+
+
+    .getInTouch{
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .getInTouch form{
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+}
