@@ -151,6 +151,8 @@ nav{
 
     width: 90%;
     margin: 0 auto;
+
+    padding: 10px;
 }
 
 .navRight{
@@ -668,6 +670,9 @@ form button:active {
 
 
 
+
+
+
 /* Services Page */
 
 .servicesTitle{
@@ -706,6 +711,13 @@ form button:active {
 }
 
 
+
+
+
+
+
+
+
 .servicesPage{
     display: flex;
     flex-direction: row;
@@ -716,6 +728,8 @@ form button:active {
     margin: 0 auto;
 
     gap: 10vw;
+
+    flex-wrap: wrap;
 }
 
 .servicesPage .left{
@@ -738,6 +752,7 @@ form button:active {
     border-radius: 10px;
 
     min-height: 300px;
+    min-width: 200px;
 }
 
 .servicesPage .left p{
@@ -824,9 +839,12 @@ form button:active {
 
 
 
+    .mainPageDividor h2{
+        font-size: 3.5vw;
+    }
 
     h2{
-        font-size: 3.5vw;
+
         padding-right: 10px;
     }
 
@@ -1034,4 +1052,16 @@ form button:active {
         margin: 0 auto;
     }
 
+
+
+
+
+    .servicesPage{
+        flex-direction: column;
+    }
+
+    .servicesPage .left .more{
+        width: 60vw;
+        align-items: center;
+    }
 }
