@@ -58,6 +58,9 @@ h1{
     font-weight: 700;
 
     color: var(--mainPinkColor);
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h2{
@@ -795,6 +798,35 @@ form button:active {
 
 
 
+footer{
+    width: 100%;
+    background-color: var(--darkGreyColor);
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 10px 5px 5px 5px;
+}
+
+footer p{
+    color: white;
+    margin-bottom: 5px;
+}
+
+.Webspansion{
+    color: #146ef5;
+    text-decoration: underline 2px #146ef5;
+    cursor: pointer;
+    letter-spacing: 1.1px;
+}
 
 
 
@@ -813,6 +845,9 @@ form button:active {
 
     .landingPage .left h1{
         font-size: clamp(3rem, 6.5vw, 6.5vw);
+        padding-left: 10px;
+        padding-right: 10px;
+
     }
 
     .landingPage .left{
@@ -1015,7 +1050,7 @@ form button:active {
     }
 
     .aboutUsPage .right{
-        width: 50%;
+        width: 70%;
     }
 
 
